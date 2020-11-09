@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+   
+    <title>Final Dev Assignment - Anthony Lock</title> 
+  </head> 
+  
+  <body > 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">UX 2020</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+    <li class="nav-item active">
+        <a class="nav-link" href="/">Home </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/takeAttendance">Mark Attendance</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/individualStudent">View Individual Student</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/entireClass">View Entire class</a>
+    </li>
+</ul>
+</div>
+
+    </nav>
+    <header>
+      
+    </header> 
+    <main> 
+      <script src="/js/allStudentAndMark.js"></script>
+<h1 class="text-center">Entire Class Attendance</h1>
+<hr>
+<p class = "text-center">Attendace marks for each day within the given class, throughout the whole semester</p>
+<hr>
+<p class="text-center">Key: Present = Green | Absent = Red | Explained = Yellow | Sick = Blue | Late = Orange</p>
+        
+        <hr>
+<div class = "col1" style = "float: left; width: 100%;">
+    <table id = "markRollTable" class = "text-center">
+        <tbody class = "text-center">
+            <tr class = "text-center">
+                <td>Name:</td>
+                <td>Student ID:</td>
+                <td id="week" colspan="2">Week 1:</td>
+                <td id="week" colspan="2">Week 2:</td>
+                <td id="week" colspan="2">Week 3:</td>
+                <td id="week" colspan="2">Week 4:</td>
+                <td id="week" colspan="2">Week 5:</td>
+                <td id="week" colspan="2">Week 6:</td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td></td>
+                <td >Class 1:</td>
+                <td>Class 2:</td>
+                <td>Class 1:</td>
+                <td>Class 2:</td>
+                <td>Class 1:</td>
+                <td>Class 2:</td> 
+                <td>Class 1:</td>
+                <td>Class 2:</td>
+                <td>Class 1:</td>
+                <td>Class 2:</td>
+                <td>Class 1:</td>
+                <td>Class 2:</td
+            </tr>
+        </tbody>
+    </table>  
+    
+</div>      
+
+    </main> 
+    <footer class = "footer">
+      
+
+    </footer>
+  </body> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</html>

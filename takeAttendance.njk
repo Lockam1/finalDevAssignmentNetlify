@@ -1,0 +1,95 @@
+---
+layout: base-layout.njk
+
+---
+
+<script src="/js/readAPI.js"></script>
+<div class="content text-center" id = "content" style="padding-bottom: 5%;">
+    <div id="markRole" class="text-center">
+        <h1 class="text-center">Mark Attendance</h1>
+        <p>Mark your students Present, Absent, Sick, Late or Explained.</p>
+        <hr>
+        <label for="class">Class:</label>
+        <select class="className" id="className" disabled>
+            <option value ="IN790">IN790</option>
+            <option value ="IN700">IN700</option>
+            <option value ="IN750">IN750</option>
+            <option value ="IN760">IN760</option>
+        </select>
+        <h3 id="formTitle" class="text-center">Class: IN790 </h3>
+        <hr>
+        
+        <div class="">
+            <div class = "leftOption">
+                
+                <label for="class">Class of the week:</label>
+                <select class="class" id="class">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <label for="stream">Stream:</label>
+                <select class="stream" id="stream">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                <button type="button" class="btn btn-success" onclick="update()"> Update </button>
+                <label for="auto">Autofill marks for today:</label>
+                <select class="auto" id="auto">
+                    <option value = "Present">Present (P)</option>
+                    <option value = "Absent">Absent (A)</option>
+                    <option value = "Late">Late  (L)</option>
+                    <option value = "Explained">Explaind (E)</option>
+                    <option value = "Sick">Sick (S)</option>
+                </select>
+                <button type="button" class="btn btn-success" onclick="autoFill()"> AutoFill </button>
+
+            </div>
+            <div class = "rightOption">
+                
+            </div>
+        </div>
+        
+        <hr>
+        <p>Key: Present = Green | Absent = Red | Explained = Yellow | Sick = Blue | Late = Orange</p>
+        
+        <hr>
+        <div class ="form">
+            <div class = "col1" style = "float: left; width: 80%;">
+                <table id = "markRollTable" class = "text-center" style="width:100%">
+                    <tbody class = "text-center">
+                        <tr class = "text-center">
+                            <td>Name:</td>
+                            <td>Student ID:</td>
+                            <td style="width: 5%;">Class:</td>
+                            <td>Stream:</td>
+                            {# <td>Average Percentage of Attendance:</td> #}
+                            <td>Yesterdays Mark:</td>
+                            <td>Today:</td>
+                        </tr> 
+                        
+                    </tbody>
+                </table>  
+                <div class = "buttons">
+                    <button id="submit" type="button" class="btn btn-success" onclick="submit()"><a href="/">Submit</a></button>
+                    <button type="button" class="btn btn-danger"><a href="/"> Cancel </a></button>
+                    <button type="button" class="btn btn-warning" onclick="save(this)"> Save </button>
+                </div> 
+            </div>      
+            <div class = "col2"  style = "float: right; width: 20%;">
+                <h4>Personal Information</h4>
+                <p >First Name:</p><p id="first"></p>
+                <p >Last Name:</p><p id="last"></p>
+                <p >Ethnicity:</p><p id="ethnicity"></p>
+                <p >Age:</p><p id="age"></p>
+                <p >Address:</p><p id="address"></p>
+                <p >Email:</p><p id="email"></p>
+                <p >Student ID:</p><p id="sID"></p>
+                <p >Phone:</p><p id="ph"></p>
+                <p >Enrolment Status:</p><p id="enrolment"></p>
+                <p >Enroled since:</p><p id="since"></p>
+                <p>Image:</p>
+               
+            </div>
+        </div>
+    </div>
+</div>
