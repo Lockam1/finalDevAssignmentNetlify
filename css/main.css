@@ -46,3 +46,15 @@ table, th, td {
 .content{
     width: 100%;
 }
+.col1index{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+.col2index{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+.col3index{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}

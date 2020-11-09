@@ -63,3 +63,19 @@ table, th, td {
 .late{
     background-color: chocolate;
 }
+.col1index{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+
+}
+.col2index{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+.col3index{
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+li{
+    padding-top: 5px !important;
+}
